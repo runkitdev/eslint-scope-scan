@@ -30,7 +30,7 @@ grow.
 
    | status | bug |
    |--------|---------------|
-   | unpublished | [GitHub issue](https://github.com/eslint/eslint-scope/issues/39) |
+   | unpublished | [eslint-scope #39](https://github.com/eslint/eslint-scope/issues/39) |
 
    The package that we believe had the original vulnerability.
    
@@ -38,7 +38,7 @@ grow.
 
    | status | bug |
    |--------|---------------|
-   | unpublished | [GitHub issue](https://github.com/eslint/eslint-scope/issues/39) |
+   | unpublished | [eslint-scope #39](https://github.com/eslint/eslint-scope/issues/39) |
   
    A related package that was quickly discovered to also contain the vulnerability.
 
@@ -46,6 +46,6 @@ grow.
 
    | status | bug |
    |--------|---------------|
-   | **still vulnerable** | [GitHub issue](https://github.com/doasync/eslint-config-airbnb-standard/issues/3) |
+   | **still vulnerable** | [eslint-config-airbnb-standard #3](https://github.com/doasync/eslint-config-airbnb-standard/issues/3) |
    
-   RunKit's virus scan detected that `eslint-config-airbnb-standard@2.0.0` contains `eslint-scope@3.7.2` in its `bundleDependencies`. Unlike `dependencies`, `bundledDependencies` are not downloaded separately from npm at install but rather included directly in the tarball. This means that this version will always be susceptible to the bug despite not having necessarily been directly compromised itself, since it will always contain the originally affected `eslint-scope`. Given that the virus takes action during installation and eslint-scope is present in `bundledDependencies`, it is **possible** that the bug won't have a chance to take effect. However, we have not thoroughly tested this and it is recommended you move away from this version either way.
+   RunKit's virus scan detected that `eslint-config-airbnb-standard@2.0.0` contains `eslint-scope@3.7.2` in its `bundleDependencies`. Unlike `dependencies`, `bundledDependencies` are not downloaded separately from npm at install but rather included directly in the tarball. This means that this version will always be susceptible to the bug despite not having necessarily been directly compromised itself, since it will always contain the originally affected `eslint-scope`. Given that the virus takes action during installation and eslint-scope is present in `bundledDependencies`, it is **possible** that the bug won't have a chance to take effect. However, we have not thoroughly tested this and it is recommended you move away from this version either way. Version 2.1.0 does not appear to have the vulnerability.
