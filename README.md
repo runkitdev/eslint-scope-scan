@@ -5,7 +5,7 @@ on npm readily available, so we've kicked off an initial simple scan of every
 package currently published to see if we detect the additional presence of this
 virus in the registry. The process is ongoing and we will be updating this
 README with our findings, as well as filing issues on any projects if we get a
-positive hit. We have already found one instance that was previously unreported
+positive hit. We have already [found one instance](https://github.com/runkitdev/eslint-scope-scan/blob/master/README.md#eslint-config-airbnb-standard200) that was previously unreported
 that is detailed below.
 
 This is a fairly simplestic scan, just searching for the strings
