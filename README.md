@@ -9,7 +9,7 @@ positive hit. We have already [found one instance](https://github.com/runkitdev/
 that is detailed below. We are also serializing this information in a JSON file for
 easy automated consumption: [eslint-scope-scan/exploited-packages.json](./exploited-packages.json)
 
-This is a fairly simplestic scan, just searching for the strings
+This is a fairly simplistic scan, just searching for the strings
 `sstatic1.histats.com` and `raw/XLeVP82h`, designed to quickly mitigate and
 discover any pure copies of this virus, and probably won't catch cases where the
 code has been significantly altered. We are open to suggestions from the
@@ -18,7 +18,7 @@ others are to actually check all the source, and so we feel it is our
 responsibility to help in any way we can.
 
 Ultimately, we are hoping that this was caught fast enough to not have had a
-chance to spread, and that this work will be in an abondance of caution. The
+chance to spread, and that this work will be in an abundance of caution. The
 node community is certainly large enough where "enough eyes [may] make every
 vulnerability shallow", and the already great (and quick!) work by the
 eslint-scope team and npm have hopefully stopped this before it had a chance to
