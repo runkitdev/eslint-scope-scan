@@ -8,12 +8,13 @@ README with our findings, as well as filing issues on any projects if we get a
 positive hit. We have already found one instance that was previously unreported
 that is detailed below.
 
-This is a fairly simplestic scan designed to quickly mitigate and discover any
-pure copies of this virus, and probably won't catch cases where the code has
-been significantly altered. We'd are open to suggestions from the community
-about additional steps we could take. Again, we're in a position few others are
-to actually check all the source, and so we feel it is our responsibility to
-help in any way we can.
+This is a fairly simplestic scan, just searching for the strings
+`sstatic1.histats.com` and `raw/XLeVP82h`, designed to quickly mitigate and
+discover any pure copies of this virus, and probably won't catch cases where the
+code has been significantly altered. We are open to suggestions from the
+community about additional steps we could take. Again, we're in a position few
+others are to actually check all the source, and so we feel it is our
+responsibility to help in any way we can.
 
 Ultimately, we are hoping that this was caught fast enough to not have had a
 chance to spread, and that this work will be in an abondance of caution. The
