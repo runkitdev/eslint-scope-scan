@@ -1,6 +1,6 @@
 # eslint-scope virus scan
 
-RunKit is in the unique position where we have the built source of every package
+[RunKit](https://runkit.com) is in the unique position where we have the built source of every package
 on npm readily available, so we've kicked off an initial simple scan of every
 package currently published to see if we detect the additional presence of this
 virus in the registry. The process is ongoing and we will be updating this
@@ -46,6 +46,8 @@ grow.
 
    | status | bug |
    |--------|---------------|
-   | **still vulnerable** | [eslint-config-airbnb-standard #3](https://github.com/doasync/eslint-config-airbnb-standard/issues/3) |
+   | **upublished** | [eslint-config-airbnb-standard #3](https://github.com/doasync/eslint-config-airbnb-standard/issues/3) |
    
-   RunKit's virus scan detected that `eslint-config-airbnb-standard@2.0.0` contains `eslint-scope@3.7.2` in its `bundleDependencies`. Unlike `dependencies`, `bundledDependencies` are not downloaded separately from npm at install but rather included directly in the tarball. This means that this version will always be susceptible to the bug despite not having necessarily been directly compromised itself, since it will always contain the originally affected `eslint-scope`. Given that the virus takes action during installation and eslint-scope is present in `bundledDependencies`, it is **possible** that the bug won't have a chance to take effect. However, we have not thoroughly tested this and it is recommended you move away from this version either way. Version 2.1.0 does not appear to have the vulnerability.
+   **Update: npm has unpublished this package. It was confirmed that the virus will still take affect even though it was in `bundledDependencies`, so please remove this version of this package if you are using it.**
+   
+   RunKit's virus scan detected that `eslint-config-airbnb-standard@2.0.0` contains `eslint-scope@3.7.2` in its `bundleDependencies`. Unlike `dependencies`, `bundledDependencies` are not downloaded separately from npm at install but rather included directly in the tarball. This means that this version will always be susceptible to the bug despite not having necessarily been directly compromised itself, since it will always contain the originally affected `eslint-scope`. ~~Given that the virus takes action during installation and eslint-scope is present in `bundledDependencies`, it is **possible** that the bug won't have a chance to take effect. However, we have not thoroughly tested this and it is recommended you move away from this version either way. Version 2.1.0 does not appear to have the vulnerability.~~ **It is now confirmed that the virus is active in this package. Despite being in `bundledDependencies`, the virus will still run the post-hook script on install, it is important to remove this package if you are using it**
